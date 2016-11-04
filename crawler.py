@@ -14,10 +14,10 @@ def establish_connection(url):
 	 This function tries to establish connection to a specified URL.
 	 
 	 Args:
-        param1 (str): The URL string to which connection has to be established.
+        	param1 (str): The URL string to which connection has to be established.
 
-    Returns:
-        bool: The return value. True for success, False otherwise. 
+    	Returns:
+        	bool: The return value. True for success, False otherwise. 
 	"""
 	user_agent = 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)'
 	values = {'name':'Harsha', 'location':'Boston', 'language':'Python'}
@@ -43,11 +43,11 @@ def crawl_web(url_connect, keyphrase):
 	 If keyphrase is not mentioned returns list of all the outlinks.
 	 
 	 Args:
-        param1 (str): Entire webpage content as string.
+        	param1 (str): Entire webpage content as string.
 		param2 (str): The keyphrase to be searched.
 		
-    Returns:
-        list: The list of outlink URL's from the given webpage.
+    	Returns:
+        	list: The list of outlink URL's from the given webpage.
 	"""
 	if not url_connect:
 		print 'The URL is empty'
@@ -68,10 +68,10 @@ def get_crawled_pages(soup):
 	 This function tries to get the list of outlink URL's from a given webpage content.
 	 
 	 Args:
-        param1 (BeautifulSoup): Entire webpage content as a BeautifulSoup object.
+        	param1 (BeautifulSoup): Entire webpage content as a BeautifulSoup object.
 		
-    Returns:
-        list: The list of outlink URL's from the given webpage.
+    	Returns:
+        	list: The list of outlink URL's from the given webpage.
 	"""
 
 	list_url = []
